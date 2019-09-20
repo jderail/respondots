@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+$white: #f9f8f0;
+
+* {
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: $white;
+}
+
+#root {
+    position: relative;
+}
+
+#head {
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    padding: 3rem;
+    //background-color: rgba(255, 255, 255, 0.75);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 768px;
+}
+
+.txt-light {
+    color:$white;
+}
+
+h1 {font-size: 2.5rem;}
+h2 {font-size: 1.5rem;}
+@media screen and (min-width: 768px) {
+    h1 {font-size: 3.5rem;}
+    h2 {font-size: 2rem;}
+}
+
+h1,h2 {
+    display: block;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+pre {
+    color: #ac5369;
+    background-color:darken($white, 5%);
+    padding: 15px;
+    overflow: auto;
+}
+
+.note {
+    color: #5c5b57;
+    font-style: italic
+}
+
+ul#options {
+    padding-left: 0;
+    &>li {
+        list-style: none;
+        &:not(:last-child) {
+            border-bottom:1px solid #5c5b57;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+a {
+    color: #030c11;
+}
+a.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid $white;
+    border-radius: 3px;
+    color : $white;
+    text-decoration: none;
+    &:not(:last-of-type){
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    &>.icon {margin-right: 0.5rem;}
+}
+.icon {
+    height: 25px;
+    width: 25px;
+}
