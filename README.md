@@ -1,6 +1,6 @@
 # Respondots
 
-Easy to integrate canvas based interactive background
+Easy to integrate canvas based interactive background. More info and demo on [jderail.github.io/respondots](https://jderail.github.io/respondots/)
 
 
 ## Getting started
