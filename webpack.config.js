@@ -68,7 +68,14 @@ let config_docs = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './docs-src/index.html',
-      minify: true,
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      },
     })
   ]
 }
