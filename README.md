@@ -1,8 +1,10 @@
 # Respondots
+
 Easy to integrate canvas based interactive background
 
 
-## Getting started
+## Getting started
+
 Download the [latest release](https://github.com/jderail/respondots/releases) and include respondots.min.js.
 
 ```html
@@ -10,6 +12,7 @@ Download the [latest release](https://github.com/jderail/respondots/releases) an
 ```
 
 Initialize a new Respondots object with the root element
+
 ```js
 new Respondots(document.getElementById('root'));
 ```
